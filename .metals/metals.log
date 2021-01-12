@@ -7390,3 +7390,325 @@ where Token = scala.meta.tokens.Token$@4f94f465
 2021.01.11 17:04:11 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
 2021.01.11 17:11:06 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
 2021.01.11 19:30:01 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:38:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 19:43:08 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 19:45:13 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 19:45:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+Jan 11, 2021 7:46:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@1358aefd
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@1358aefd
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1592)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@1358aefd
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$caseClause$1(ScalametaParser.scala:2851)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.caseClause(ScalametaParser.scala:2850)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2891)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$4(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrError(ScalametaParser.scala:627)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrNil(ScalametaParser.scala:642)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2199)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4688)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4688)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2847)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2840)
+	at scala.meta.internal.parsers.ScalametaParser.blockOrCase$1(ScalametaParser.scala:2828)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$3(ScalametaParser.scala:2831)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2831)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2824)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2647)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:706)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:716)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2617)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2615)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2599)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2579)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$13(ScalametaParser.scala:2177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1974)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2002)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:4000)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3942)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3894)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3782)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3767)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4614)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4608)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4552)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4607)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4604)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4461)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4461)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4466)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4454)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$classDef$1(ScalametaParser.scala:4136)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.classDef(ScalametaParser.scala:4112)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4068)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4056)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4574)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4562)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4552)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4561)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4765)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4739)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4722)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4721)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:144)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:144)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$254.apply(ScalametaParser.scala:4789)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	... 3 more
+
+Jan 11, 2021 7:46:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@6ed35b01
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@6ed35b01
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1592)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]).&&(org.scalameta.`package`.debug(ScalametaParser.this.token))
+found that scala.meta.classifiers.`package`.XtensionClassifiable[scala.meta.tokens.Token](ScalametaParser.this.token)(scala.meta.tokens.Token.classifiable[scala.meta.tokens.Token]).isNot[scala.meta.tokens.Token.KwCase](Token.this.KwCase.classifier[scala.meta.tokens.Token]) is false
+where ScalametaParser = scala.meta.internal.parsers.ScalametaParser@6ed35b01
+where ScalametaParser.this.token = case
+where Token = scala.meta.tokens.Token$@4f94f465
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$caseClause$1(ScalametaParser.scala:2851)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.caseClause(ScalametaParser.scala:2850)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2891)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$4(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrError(ScalametaParser.scala:627)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOrNil(ScalametaParser.scala:642)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:2022)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2199)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4688)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4533)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4688)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2847)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2840)
+	at scala.meta.internal.parsers.ScalametaParser.blockOrCase$1(ScalametaParser.scala:2828)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$3(ScalametaParser.scala:2831)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2831)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2824)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2647)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:706)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:716)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2617)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2615)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2599)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2579)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$13(ScalametaParser.scala:2177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:2177)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2064)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1974)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2002)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:4000)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3942)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3894)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3782)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3767)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4614)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4608)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4552)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4607)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4604)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4461)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:620)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4461)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4466)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4454)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$classDef$1(ScalametaParser.scala:4136)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.classDef(ScalametaParser.scala:4112)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4068)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4056)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4574)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4562)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4552)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4561)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4765)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4771)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4739)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4722)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:713)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4721)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4727)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:144)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:54)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:144)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$254.apply(ScalametaParser.scala:4789)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	... 3 more
+
+2021.01.11 19:46:49 WARN  no build tool detected in workspace '/Users/roml/WorkSpace/Rev/big-data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2021.01.11 19:47:17 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:51:22 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 19:54:27 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:55:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:55:49 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:56:17 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 19:57:13 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 20:00:20 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:00:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:02:15 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:02:55 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:05:33 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:05:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:08:01 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 20:08:54 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:09:13 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:10:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:20:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:21:23 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:22:28 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:22:52 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:23:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:27:20 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:28:35 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:29:19 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:31:27 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:33:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+Jan 11, 2021 8:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7698
+2021.01.11 20:34:56 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:35:24 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:53:15 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:54:08 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:54:58 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:55:41 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 20:56:41 WARN  no build tool detected in workspace '/Users/roml/WorkSpace/Rev/big-data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2021.01.11 20:56:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:01:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:02:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:03:23 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:04:03 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:07:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:09:01 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:10:14 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:10:49 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:12:59 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:13:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:14:13 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:14:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:16:08 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:16:12 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:22:32 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:23:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 21:24:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 21:25:10 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 21:27:38 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:28:14 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:28:37 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:29:55 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:30:14 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:30:57 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:32:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:33:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:34:16 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/FileUtil.scala
+2021.01.11 21:35:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:38:35 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:40:38 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:42:01 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.11 21:42:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
