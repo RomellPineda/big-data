@@ -1,18 +1,23 @@
 package io.romellpineda.movieapp
 
 import scala.io.StdIn
+import scala.collection.mutable.ArrayBuffer
 
 class Cli {
 
   def start() : Unit = {
     val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
-    try {
-      println(FileUtil.getFileContext(sourcePath))
-    } catch {
-      case e : Exception => println(s"Cli start() encountered exception: ${e}")
-    } finally {
-      println("read file operation clear")
-    }
+    FileUtil.getFileContext(sourcePath)
+    var str = "movie title, rating, number of reviews, year"
+    println("----------" + FileUtil.store(str) + "----------")
+    // val arr : ArrayBuffer[String] = FileUtil.getFileContext(sourcePath)
+    // try {
+    //   println(FileUtil.getFileContext(sourcePath))
+    // } catch {
+    //   case e : Exception => println(s"Cli start() encountered exception: ${e}")
+    // } finally {
+    //   println("read file operation clear")
+    // }
     
     // Banner
     println("starting command line interface")
