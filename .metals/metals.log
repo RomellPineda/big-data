@@ -7886,3 +7886,16 @@ something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/mai
 2021.01.14 19:56:29 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
 2021.01.14 19:58:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
 2021.01.14 19:59:12 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 20:05:41 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 20:06:05 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 20:12:06 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 20:12:16 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 20:12:24 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 21:05:25 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:13:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:15:10 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:27:25 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:28:16 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:29:14 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.14 22:32:00 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala in Array[String]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala, 68, 68, 81)
