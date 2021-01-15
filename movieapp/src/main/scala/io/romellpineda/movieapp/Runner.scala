@@ -4,9 +4,9 @@ object Runner {
 
   def main(args: Array[String]) : Unit = {
 
-    val connectionUrl = "jdbc:postgresql://localhost:5432/postgres?user=postgres&password=postgres"
+    ConnectUtil.getConnection()
 
-    val cli = new Cli()
-    cli.start()
+    // val cli = new Cli()
+    // cli.start()
   }
 }

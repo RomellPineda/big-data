@@ -23,6 +23,6 @@ object FileUtil {
     // to do: set return type to Unit
     // to do: insert processed data to db
     // to do: !! DROP TABLE !! otherwise repeat data
-    return data.split(",")(2).trim()
+    data.split(",")(2).trim()
   }
 }
