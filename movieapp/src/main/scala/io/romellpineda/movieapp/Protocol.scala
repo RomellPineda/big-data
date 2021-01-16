@@ -2,8 +2,16 @@ package io.romellpineda.movieapp
 
 object Protocol {
 
-  def browse() : String = {
-    "running browse protocol from Protocol file"
+  def browseAll() : String = {
+    "running browseAll protocol from Protocol file"
+  }
+  
+  def browseRating() : String = {
+    "running browseRating protocol from Protocol file"
+  }
+  
+  def browseTitle() : String = {
+    "running browseTitle protocol from Protocol file"
   }
   
   def exit() : String = {

@@ -7,27 +7,13 @@ class Cli {
 
   def start() : Unit = {
     val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
-    FileUtil.getFileContext(sourcePath)
-    var str = "movie title, rating, number of reviews, year"
-    println("----------" + FileUtil.store(str) + "----------")
-    // val arr : ArrayBuffer[String] = FileUtil.getFileContext(sourcePath)
-    // try {
-    //   println(FileUtil.getFileContext(sourcePath))
-    // } catch {
-    //   case e : Exception => println(s"Cli start() encountered exception: ${e}")
-    // } finally {
-    //   println("read file operation clear")
-    // }
-    
-    // Banner
-    println("starting command line interface")
-
     val userInput = StdIn.readLine()
 
-    // .equals not neccessary for case matching -> source: https://docs.scala-lang.org/overviews/scala-book/match-expressions.html
+    FileUtil.getFileContext(sourcePath)
+
     parseAction(userInput) match {
-      case "browse" => {
-        println(Protocol.browse())
+      case "all" => {
+        println(Protocol.browseAll())
       }
       case "exit" => {
         println(Protocol.exit())
@@ -35,11 +21,21 @@ class Cli {
       case "pay" => {
         println(Protocol.pay())
       }
+      case "rating" => {
+        println(Protocol.browseRating())
+      }
       case "rent" => {
+        // userInput object will be further evaluated for movie title value
+        // OR pass userInput object to rent func
         println(Protocol.rent())
       }
       case "subscribe" => {
         println(Protocol.subscribe())
+      }
+      case "title" => {
+        // userInput object will be further evaluated for movie title value
+        // OR pass userInput object to rent func
+        println(Protocol.browseTitle())
       }
       case "unsubscribe" => {
         println(Protocol.unsubscribe())
