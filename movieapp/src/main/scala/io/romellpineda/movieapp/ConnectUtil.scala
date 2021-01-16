@@ -18,6 +18,8 @@ object ConnectUtil {
       connection = use(DriverManager.getConnection(connectionUrl))
       val dbQuery = use(connection.prepareStatement("SELECT * FROM player"))
       dbQuery.execute()
+
+      // target for clean up
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
         println(result.getString("alias"))

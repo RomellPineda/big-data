@@ -6,7 +6,7 @@ object Runner {
 
     ConnectUtil.getConnection()
 
-    // val cli = new Cli()
-    // cli.start()
+    val cli = new Cli()
+    cli.start()
   }
 }

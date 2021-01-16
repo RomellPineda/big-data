@@ -27,16 +27,22 @@ class Cli {
     // .equals not neccessary for case matching -> source: https://docs.scala-lang.org/overviews/scala-book/match-expressions.html
     parseAction(userInput) match {
       case "browse" => {
-        println("running browse protocol")
-      }
-      case "rent" => {
-        println("running rent protocol")
-      }
-      case "pay" => {
-        println("running pay protocol")
+        println(Protocol.browse())
       }
       case "exit" => {
-        println("Thank you, enjoy your rental")
+        println(Protocol.exit())
+      }
+      case "pay" => {
+        println(Protocol.pay())
+      }
+      case "rent" => {
+        println(Protocol.rent())
+      }
+      case "subscribe" => {
+        println(Protocol.subscribe())
+      }
+      case "unsubscribe" => {
+        println(Protocol.unsubscribe())
       }
       case _ => {
         println("Not sure what you mean. Please try again")
