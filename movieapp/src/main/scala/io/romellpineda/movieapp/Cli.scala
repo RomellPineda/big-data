@@ -6,10 +6,12 @@ import scala.collection.mutable.ArrayBuffer
 class Cli {
 
   def start() : Unit = {
-    val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
-    val userInput = StdIn.readLine()
 
+    // target for move to Runner
+    val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
     FileUtil.getFileContext(sourcePath)
+    
+    val userInput = StdIn.readLine()
 
     parseAction(userInput) match {
       case "all" => {

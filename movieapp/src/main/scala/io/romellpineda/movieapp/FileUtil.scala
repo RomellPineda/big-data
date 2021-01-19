@@ -11,7 +11,7 @@ object FileUtil {
 
     try {
       readFile = Source.fromFile(path)
-      readFile.getLines().map(line => store(line))
+      readFile.getLines().foreach(line => processLine(line))
     } catch {
       case e : Exception => s"FileUtil getFileContext() encountered exception ${e}"
     } finally {
@@ -19,10 +19,9 @@ object FileUtil {
     }
   }
 
-  def store(data: String): String = {
-    // to do: set return type to Unit
-    // to do: insert processed data to db
-    // to do: !! DROP TABLE !! otherwise repeat data
-    data.split(",")(2).trim()
+  def processLine(data: String): Unit = {
+    var title = data.split(",")(0).trim()
+    // var rating = data.split(",")(2).trim().toInt
+    ConnectUtil.insertMovie(title, 3)
   }
 }

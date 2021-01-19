@@ -11,7 +11,7 @@ object ConnectUtil {
   val connectionUrl = "jdbc:postgresql://localhost:5432/roml"
   var connection : Connection = null
   
-  def callDb(context : String): Unit = {
+  def callDb(context : String) : Unit = {
 
     classOf[org.postgresql.Driver].newInstance()
     var resultArray = new ArrayBuffer[String]()
@@ -36,5 +36,21 @@ object ConnectUtil {
     //     println(result.getString("title"))
     //   }
     // }
+  }
+
+  def insertMovie(title : String, rating : Int) : Unit = {
+
+    classOf[org.postgresql.Driver].newInstance()
+    // var resultArray = new ArrayBuffer[String]()
+
+    Using.Manager { use =>
+      connection = use(DriverManager.getConnection(connectionUrl))
+      // send to processing function
+      val dbQuery = use(connection.prepareStatement("INSERT INTO movie (title, rating) VALUES (?, ?);"))
+      dbQuery.setString(1, title)
+      dbQuery.setInt(2, rating)
+      dbQuery.execute()
+      
+    }
   }
 }
