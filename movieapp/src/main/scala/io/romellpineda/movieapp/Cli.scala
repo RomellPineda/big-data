@@ -7,41 +7,47 @@ class Cli {
 
   def start() : Unit = {
     
-    val userInput = StdIn.readLine()
+    var loopMenu = true
+    
+    while (loopMenu) {
 
-    parseAction(userInput) match {
-      case "all" => {
-        println(Protocol.browseAll())
-      }
-      case "exit" => {
-        println(Protocol.exit())
-      }
-      case "pay" => {
-        println(Protocol.pay())
-      }
-      case "rating" => {
-        println(Protocol.browseRating())
-      }
-      case "rent" => {
-        // userInput object will be further evaluated for movie title value
-        // OR pass userInput object to rent func
-        println(Protocol.rent())
-      }
-      case "subscribe" => {
-        println(Protocol.subscribe())
-      }
-      case "title" => {
-        // userInput object will be further evaluated for movie title value
-        // OR pass userInput object to rent func
-        println(Protocol.browseTitle())
-      }
-      case "unsubscribe" => {
-        println(Protocol.unsubscribe())
-      }
-      case _ => {
-        println("Not sure what you mean. Please try again")
+      val userInput = StdIn.readLine()
+  
+      parseAction(userInput) match {
+        case "all" => {
+          Protocol.browseAll()
+        }
+        case "exit" => {
+          loopMenu = false
+        }
+        case "pay" => {
+          println(Protocol.pay())
+        }
+        case "rating" => {
+          Protocol.browseRating()
+        }
+        case "rent" => {
+          // userInput object will be further evaluated for movie title value
+          // OR pass userInput object to rent func
+          println(Protocol.rent())
+        }
+        case "subscribe" => {
+          println(Protocol.subscribe())
+        }
+        case "title" => {
+          // userInput object will be further evaluated for movie title value
+          // OR pass userInput object to rent func
+          println(Protocol.browseTitle())
+        }
+        case "unsubscribe" => {
+          Protocol.unsubscribe()
+        }
+        case _ => {
+          println("Not sure what you mean. Please try again")
+        }
       }
     }
+    println("Thank you!")
   }
 
   def parseAction(userInput: String): String = {

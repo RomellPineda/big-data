@@ -8159,3 +8159,136 @@ WARNING: Unmatched cancel notification for request id 11999
 2021.01.19 16:00:57 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
 2021.01.19 16:08:35 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
 2021.01.19 16:12:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 17:07:51 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 17:09:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 17:09:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 18:25:38 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:25:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:25:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:26:14 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:26:56 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:27:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:27:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:28:55 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:31:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:31:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:31:59 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:34:10 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:35:33 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:36:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:37:15 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:37:33 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:38:57 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 18:39:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:45:40 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:45:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 18:58:32 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 374)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 367)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 368)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 369)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 370)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[<error>]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 371)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[String]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 372)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[String]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 372)
+something's wrong: no file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala in Array[String]RangePosition(file:///Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala, 359, 359, 372)
+2021.01.19 19:03:48 WARN  no build tool detected in workspace '/Users/roml/WorkSpace/Rev/big-data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2021.01.19 19:05:30 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:07:45 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:07:59 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:12:28 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:16:29 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:16:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:19:17 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:19:27 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:19:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:20:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:20:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:21:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:21:50 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:27:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:32:04 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:34:04 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:35:25 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:36:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:39:32 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:40:37 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 19:41:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:42:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:43:32 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:43:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:45:54 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 19:46:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:48:11 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:49:09 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:50:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:51:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:51:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:52:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:54:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:56:06 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:56:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:59:17 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 19:59:28 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:01:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:02:05 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:02:23 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 20:03:26 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:04:11 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 20:04:45 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:04:53 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 20:05:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 20:05:55 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
+2021.01.19 20:08:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:09:03 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:09:30 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:09:49 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:13:28 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:22:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:22:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 20:26:47 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 20:27:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 20:27:54 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 20:28:45 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 20:33:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 20:36:22 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+Jan 19, 2021 8:36:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17813
+2021.01.19 20:37:00 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 20:37:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 20:38:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:49:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:50:57 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:51:25 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:51:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:53:16 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+Jan 19, 2021 8:54:06 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 19, 2021 8:54:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+Jan 19, 2021 8:54:09 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 19, 2021 8:54:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2021.01.19 20:54:20 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
+2021.01.19 20:54:50 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
