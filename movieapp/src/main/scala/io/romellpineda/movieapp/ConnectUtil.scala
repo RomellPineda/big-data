@@ -135,10 +135,13 @@ object ConnectUtil {
 
     Using.Manager { use =>
       connection = use(DriverManager.getConnection(connectionUrl))
-      val dbQuery = use(connection.prepareStatement("SELECT title FROM movie WHERE title = ?;"))
+      val dbQuery = use(connection.prepareStatement("SELECT title FROM movie WHERE title LIKE CONCAT( '%',?,'%');"))
+
+      // necessary structure '%Foo%'
       dbQuery.setString(1, searchString)
       dbQuery.execute()
 
+      // this part works
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
         resultArray.+=(result.getString("title"))
