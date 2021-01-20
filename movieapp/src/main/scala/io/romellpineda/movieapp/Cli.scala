@@ -7,10 +7,13 @@ class Cli {
 
   def start() : Unit = {
     
+    var cart = new ArrayBuffer[String]()
     var loopMenu = true
-    
+    var customerId = null
+
     while (loopMenu) {
 
+      Display.menu()
       val userInput = StdIn.readLine()
   
       parseAction(userInput) match {
@@ -20,11 +23,11 @@ class Cli {
         case "exit" => {
           loopMenu = false
         }
+        case "highest" => {
+          Protocol.browseRating()
+        }
         case "pay" => {
           println(Protocol.pay())
-        }
-        case "rating" => {
-          Protocol.browseRating()
         }
         case "rent" => {
           // userInput object will be further evaluated for movie title value
@@ -34,7 +37,7 @@ class Cli {
         case "subscribe" => {
           println(Protocol.subscribe())
         }
-        case "title" => {
+        case "search" => {
           // userInput object will be further evaluated for movie title value
           // OR pass userInput object to rent func
           println(Protocol.browseTitle())
@@ -50,11 +53,11 @@ class Cli {
     println("Thank you!")
   }
 
-  def parseAction(userInput: String): String = {
+  def parseAction(userInput: String) : String = {
     val inputArray = userInput.trim().split(" ")
 
-    if (inputArray.length >= 2) {
-      return inputArray(1).toLowerCase()
+    if (inputArray.length >= 1) {
+      return inputArray(0).toLowerCase()
     } else {
       return "?"
     }

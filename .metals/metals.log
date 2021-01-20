@@ -8292,3 +8292,90 @@ java.lang.NullPointerException
 
 2021.01.19 20:54:20 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Protocol.scala
 2021.01.19 20:54:50 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 21:50:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 21:58:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 21:58:28 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 21:58:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 21:58:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:00:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:01:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 22:03:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+Jan 19, 2021 10:05:44 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 19, 2021 10:05:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2021.01.19 22:06:11 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:06:25 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:09:03 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:09:24 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:10:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:11:48 WARN  no build tool detected in workspace '/Users/roml/WorkSpace/Rev/big-data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2021.01.19 22:11:48 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:12:40 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:13:17 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:15:02 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:15:50 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:15:59 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 22:16:44 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:17:03 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:17:08 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:18:36 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+Jan 19, 2021 10:19:02 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 19, 2021 10:19:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2021.01.19 22:19:13 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:19:34 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:19:50 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Cli.scala
+2021.01.19 22:20:16 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:21:04 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+Jan 19, 2021 10:24:29 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 19, 2021 10:24:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2021.01.19 22:24:43 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:27:27 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:27:37 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:31:57 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:32:05 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.19 22:44:05 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:45:04 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:47:21 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:47:41 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:48:33 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:49:11 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:49:19 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:50:46 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:51:35 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:52:33 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.19 22:53:07 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
