@@ -3,7 +3,7 @@ package io.romellpineda.movieapp
 object Protocol {
   val browseAllQuery = "SELECT DISTINCT title FROM movie;"
   val browseRatingQuery = "SELECT title, rating FROM movie ORDER BY rating DESC LIMIT 100;"
-  val createCustomerTable = "CREATE TABLE IF NOT EXISTS customer (customer_id SERIAL NOT NULL PRIMARY KEY, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, balance int DEFAULT 0);"
+  val createCustomerTable = "CREATE TABLE IF NOT EXISTS customer (customer_id SERIAL NOT NULL PRIMARY KEY UNIQUE, login_name VARCHAR(50) NOT NULL, password VARCHAR(50) NOT NULL, balance int DEFAULT 0);"
   val createMovieTable = "DROP TABLE IF EXISTS movie CASCADE; CREATE TABLE movie (movie_id SERIAL NOT NULL PRIMARY KEY, title VARCHAR(255) NOT NULL, rating VARCHAR(50) DEFAULT 0.0);"
   val createInvoiceTable = "DROP TABLE IF EXISTS invoice CASCADE; CREATE TABLE invoice (customer_id int REFERENCES customer (customer_id) ON UPDATE CASCADE ON DELETE CASCADE, movie_id int REFERENCES movie (movie_id) ON UPDATE CASCADE ON DELETE CASCADE);"
   val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
@@ -23,12 +23,16 @@ object Protocol {
     println("---------- end of list ----------")
   }
   
-  def browseTitle() : String = {
-    "running browseTitle protocol from Protocol file"
+  def browseTitle(searchString : String) : Unit = {
+    println("/// searching for : " + searchString)
+    println("------- List of all movies ------")
+    var dbResult = ConnectUtil.searchTitle(searchString)
+    dbResult.foreach(println)
+    println("---------- end of list ----------")
   }
   
-  def pay() : String = {
-    "running pay protocol from Protocol file"
+  def pay(customer_id : Int) : String = {
+    ConnectUtil.pay(customer_id)
   }
 
   def loadData() : Unit = {
@@ -38,15 +42,19 @@ object Protocol {
     FileUtil.getFileContext(sourcePath)
   }
 
+  def login() : Int = {
+    100
+  }
+
   def rent() : String = {
     "running rent protocol from Protocol file"
   }
 
-  def subscribe() : String = {
-    "running subscribe protocol from Protocol file"
+  def subscribe(login_name : String, password : String) : String = {
+    ConnectUtil.subscribe(login_name, password)
   }
 
-  def unsubscribe() : Unit = {
-    println("You have unsubscribed from the Movie Rental App")
+  def unsubscribe(login_name : String, password : String) : String = {
+    ConnectUtil.unsub(login_name, password)
   }
 }

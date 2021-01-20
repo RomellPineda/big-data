@@ -9,7 +9,7 @@ class Cli {
     
     var cart = new ArrayBuffer[String]()
     var loopMenu = true
-    var customerId = null
+    var customerId : Int = 1
 
     while (loopMenu) {
 
@@ -26,8 +26,11 @@ class Cli {
         case "highest" => {
           Protocol.browseRating()
         }
+        case "login" => {
+          customerId = Protocol.login()
+        }
         case "pay" => {
-          println(Protocol.pay())
+          println(Protocol.pay(customerId))
         }
         case "rent" => {
           // userInput object will be further evaluated for movie title value
@@ -35,15 +38,16 @@ class Cli {
           println(Protocol.rent())
         }
         case "subscribe" => {
-          println(Protocol.subscribe())
+          val input = userInput.trim().split(" ")
+          println(Protocol.subscribe(input(1), input(2)))
         }
         case "search" => {
-          // userInput object will be further evaluated for movie title value
-          // OR pass userInput object to rent func
-          println(Protocol.browseTitle())
+          val input = userInput.trim().split(" ")
+          println(Protocol.browseTitle(input(1)))
         }
         case "unsubscribe" => {
-          Protocol.unsubscribe()
+          val input = userInput.trim().split(" ")
+          println(Protocol.unsubscribe(input(1), input(2)))
         }
         case _ => {
           println("Not sure what you mean. Please try again")

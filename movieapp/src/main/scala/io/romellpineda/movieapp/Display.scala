@@ -5,7 +5,7 @@ object Display {
   def banner() : Unit = {
     println("")
     println("*************************************************************")
-    println("**        ___  ___   ______  _______  ___  ______         **")
+    println("**        ___  ___   _____   _______  __   _____          **")
     println("**       |   \\/   | |     | |   |   ||  | |  ___|        **")
     println("**       |  |\\/|  | |  |  |  \\  |  / |  | |  ___|        **")
     println("**       |__|  |__| |_____|   \\___/  |__| |_____|        **")
@@ -19,7 +19,7 @@ object Display {
     println("==================")
     println("all : to browse list all movies ")
     println("highest : to view list of highest rated movies")
-    println("search [movie title] : to search for movie by title")
+    // println("search [movie title] : to search for movie by title")
     println("signup [username] [password] : to sign up new customers")
     println("login [username] [password] : to login")
     println("pay : to pay your balance")
