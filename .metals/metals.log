@@ -8586,3 +8586,6 @@ WARNING: Unmatched cancel notification for request id 30138
 2021.01.20 03:37:18 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
 2021.01.20 03:38:42 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/ConnectUtil.scala
 2021.01.20 03:43:10 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Runner.scala
+2021.01.20 03:54:27 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.20 03:54:49 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
+2021.01.20 03:55:31 WARN  no build target for: /Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/Display.scala
