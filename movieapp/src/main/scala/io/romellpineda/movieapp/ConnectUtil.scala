@@ -47,7 +47,7 @@ object ConnectUtil {
 
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
-        resultArray.+=(result.getString("title"))
+        resultArray.+=(result.getInt("movie_id") + " | " + result.getString("title"))
       }
     }
     resultArray
@@ -64,26 +64,67 @@ object ConnectUtil {
 
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
-        resultArray.+=(result.getString("title") + ", " + result.getString("rating"))
+        resultArray.+=(result.getInt("movie_id") + " | " + result.getString("title") + ", " + result.getString("rating"))
       }
     }
 
     resultArray
   }
 
-  def pay(customer_id : Int) : String = {
-    var message = "payment unsuccessful"
+  def login(login_name : String, password : String) : Int = {
+    var id : Int = 0
     classOf[org.postgresql.Driver].newInstance()
 
     Using.Manager { use =>
       connection = use(DriverManager.getConnection(connectionUrl))
-      val dbQuery = use(connection.prepareStatement("UPDATE customer SET balance = 0 WHERE customer_id = ?;"))
-      dbQuery.setInt(1, customer_id)
+      val dbQuery = use(connection.prepareStatement("SELECT * FROM customer WHERE login_name = ? AND password = ?;"))
+      dbQuery.setString(1, login_name)
+      dbQuery.setString(2, password)
+      dbQuery.execute()
+      
+      val result = use(dbQuery.getResultSet())
+      id = result.getInt("customer_id")
+    }
+    id
+  }
+
+  def pay(customer_id : Int, balance : Int) : String = {
+    var message = "payment unsuccessful"
+    var queryString : String = "UPDATE customer SET balance = ? WHERE customer_id = ?;"
+    classOf[org.postgresql.Driver].newInstance()
+
+    Using.Manager { use =>
+      connection = use(DriverManager.getConnection(connectionUrl))
+      if (balance > 0) {
+        queryString = "UPDATE customer SET balance = balance + ? WHERE customer_id = ?;"
+      }
+      val dbQuery = use(connection.prepareStatement(queryString))
+      dbQuery.setInt(1, balance)
+      dbQuery.setInt(2, customer_id)
       dbQuery.execute()
       
       if (dbQuery.getUpdateCount() > 0) {
         message ="payment successful"
       }
+    }
+    message
+  }
+
+  def rent(customer_id : Int, movie_id : Int) : String = {
+    var message = "unsuccessful"
+    classOf[org.postgresql.Driver].newInstance()
+
+    Using.Manager { use =>
+      connection = use(DriverManager.getConnection(connectionUrl))
+      val dbQuery = use(connection.prepareStatement("INSERT INTO invoice (customer_id, movie_id) VALUES (?, ?);"))
+      dbQuery.setInt(1, customer_id)
+      dbQuery.setInt(2, movie_id)
+      dbQuery.execute()
+
+      if (dbQuery.getUpdateCount() > 0) {
+        message ="successfully added to cart"
+      }
+      pay(customer_id, 1)
     }
     message
   }

@@ -8,13 +8,15 @@ class Cli {
   def start() : Unit = {
     
     var cart = new ArrayBuffer[String]()
+    var customerId : Int = 5
     var loopMenu = true
-    var customerId : Int = 1
+    val paidBalance : Int = 0
 
     while (loopMenu) {
 
       Display.menu()
       val userInput = StdIn.readLine()
+      val inputArr = userInput.trim().split(" ")
   
       parseAction(userInput) match {
         case "all" => {
@@ -27,27 +29,23 @@ class Cli {
           Protocol.browseRating()
         }
         case "login" => {
-          customerId = Protocol.login()
+          customerId = Protocol.login(inputArr(1), inputArr(2))
+          println("##### customer id = " + customerId)
         }
         case "pay" => {
-          println(Protocol.pay(customerId))
+          println(Protocol.pay(customerId, paidBalance))
         }
         case "rent" => {
-          // userInput object will be further evaluated for movie title value
-          // OR pass userInput object to rent func
-          println(Protocol.rent())
+          println(Protocol.rent(customerId, inputArr(1).toInt))
         }
         case "subscribe" => {
-          val input = userInput.trim().split(" ")
-          println(Protocol.subscribe(input(1), input(2)))
+          println(Protocol.subscribe(inputArr(1), inputArr(2)))
         }
         case "search" => {
-          val input = userInput.trim().split(" ")
-          println(Protocol.browseTitle(input(1)))
+          println(Protocol.browseTitle(inputArr(1)))
         }
         case "unsubscribe" => {
-          val input = userInput.trim().split(" ")
-          println(Protocol.unsubscribe(input(1), input(2)))
+          println(Protocol.unsubscribe(inputArr(1), inputArr(2)))
         }
         case _ => {
           println("Not sure what you mean. Please try again")

@@ -1,8 +1,8 @@
 package io.romellpineda.movieapp
 
 object Protocol {
-  val browseAllQuery = "SELECT DISTINCT title FROM movie;"
-  val browseRatingQuery = "SELECT title, rating FROM movie ORDER BY rating DESC LIMIT 100;"
+  val browseAllQuery = "SELECT title, movie_id FROM movie ORDER BY movie_id;"
+  val browseRatingQuery = "SELECT movie_id, title, rating FROM movie ORDER BY rating DESC LIMIT 100;"
   val createCustomerTable = "CREATE TABLE IF NOT EXISTS customer (customer_id SERIAL NOT NULL PRIMARY KEY UNIQUE, login_name VARCHAR(50) NOT NULL, password VARCHAR(50) NOT NULL, balance int DEFAULT 0);"
   val createMovieTable = "DROP TABLE IF EXISTS movie CASCADE; CREATE TABLE movie (movie_id SERIAL NOT NULL PRIMARY KEY, title VARCHAR(255) NOT NULL, rating VARCHAR(50) DEFAULT 0.0);"
   val createInvoiceTable = "DROP TABLE IF EXISTS invoice CASCADE; CREATE TABLE invoice (customer_id int REFERENCES customer (customer_id) ON UPDATE CASCADE ON DELETE CASCADE, movie_id int REFERENCES movie (movie_id) ON UPDATE CASCADE ON DELETE CASCADE);"
@@ -31,8 +31,8 @@ object Protocol {
     println("---------- end of list ----------")
   }
   
-  def pay(customer_id : Int) : String = {
-    ConnectUtil.pay(customer_id)
+  def pay(customer_id : Int, balance : Int) : String = {
+    ConnectUtil.pay(customer_id, balance)
   }
 
   def loadData() : Unit = {
@@ -42,12 +42,12 @@ object Protocol {
     FileUtil.getFileContext(sourcePath)
   }
 
-  def login() : Int = {
-    100
+  def login(login_name : String, password : String) : Int = {
+    ConnectUtil.login(login_name, password)
   }
 
-  def rent() : String = {
-    "running rent protocol from Protocol file"
+  def rent(customer_id : Int, movie_id : Int) : String = {
+    ConnectUtil.rent(customer_id, movie_id)
   }
 
   def subscribe(login_name : String, password : String) : String = {
