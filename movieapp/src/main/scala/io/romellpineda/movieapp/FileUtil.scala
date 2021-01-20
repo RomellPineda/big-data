@@ -21,7 +21,7 @@ object FileUtil {
 
   def processLine(data: String): Unit = {
     var title = data.split(",")(0).trim()
-    // var rating = data.split(",")(2).trim().toInt
-    ConnectUtil.insertMovie(title, 3)
+    var rating = data.split(",")(2).trim()
+    ConnectUtil.insertMovie(title, rating)
   }
 }

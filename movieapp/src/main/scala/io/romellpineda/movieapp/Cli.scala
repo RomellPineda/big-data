@@ -6,10 +6,6 @@ import scala.collection.mutable.ArrayBuffer
 class Cli {
 
   def start() : Unit = {
-
-    // target for move to Runner
-    val sourcePath = "/Users/roml/WorkSpace/Rev/big-data/movieapp/src/main/scala/io/romellpineda/movieapp/movies.csv"
-    FileUtil.getFileContext(sourcePath)
     
     val userInput = StdIn.readLine()
 

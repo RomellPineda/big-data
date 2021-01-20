@@ -38,7 +38,7 @@ object ConnectUtil {
     // }
   }
 
-  def insertMovie(title : String, rating : Int) : Unit = {
+  def insertMovie(title : String, rating : String) : Unit = {
 
     classOf[org.postgresql.Driver].newInstance()
     // var resultArray = new ArrayBuffer[String]()
@@ -48,7 +48,8 @@ object ConnectUtil {
       // send to processing function
       val dbQuery = use(connection.prepareStatement("INSERT INTO movie (title, rating) VALUES (?, ?);"))
       dbQuery.setString(1, title)
-      dbQuery.setInt(2, rating)
+      dbQuery.setString(2, rating)
+      // dbQuery.setInt(2, rating)
       dbQuery.execute()
       
     }
