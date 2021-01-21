@@ -8,7 +8,7 @@ class Cli {
   def start() : Unit = {
     
     var cart = new ArrayBuffer[String]()
-    var customerId : Int = 5
+    var customerId : Int = 0
     var loopMenu = true
     val paidBalance : Int = 0
 
@@ -25,12 +25,12 @@ class Cli {
         case "exit" => {
           loopMenu = false
         }
-        case "highest" => {
+        case "high" => {
           Protocol.browseRating()
         }
         case "login" => {
           customerId = Protocol.login(inputArr(1), inputArr(2))
-          println("##### customer id = " + customerId)
+          println("customer id = " + customerId)
         }
         case "pay" => {
           println(Protocol.pay(customerId, paidBalance))

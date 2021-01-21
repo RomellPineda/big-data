@@ -67,7 +67,6 @@ object ConnectUtil {
         resultArray.+=(result.getInt("movie_id") + " | " + result.getString("title") + ", " + result.getString("rating"))
       }
     }
-
     resultArray
   }
 
@@ -136,13 +135,13 @@ object ConnectUtil {
 
     Using.Manager { use =>
       connection = use(DriverManager.getConnection(connectionUrl))
-      val dbQuery = use(connection.prepareStatement("SELECT title FROM movie WHERE title LIKE CONCAT( '%',?,'%');"))
+      val dbQuery = use(connection.prepareStatement("SELECT * FROM movie WHERE title LIKE CONCAT( '%',?,'%');"))
       dbQuery.setString(1, searchString)
       dbQuery.execute()
 
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
-        resultArray.+=(result.getString("title"))
+        resultArray.+=(result.getInt("movie_id") + " | " + result.getString("title"))
       }
     }
     resultArray

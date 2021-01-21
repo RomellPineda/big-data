@@ -18,7 +18,7 @@ object Display {
     println("Commands Available")
     println("==================")
     println("all : to browse list all movies ")
-    println("highest : to view list of highest rated movies")
+    println("high : to view list of highest rated movies")
     println("search [movie title] : to search for movie by title")
     println("subscribe [username] [password] : to sign up new customers")
     println("login [username] [password] : to login")
