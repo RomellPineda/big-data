@@ -83,6 +83,7 @@ object ConnectUtil {
       dbQuery.execute()
       
       val result = use(dbQuery.getResultSet())
+      result.next()
       id = result.getInt("customer_id")
     }
     id
@@ -104,7 +105,7 @@ object ConnectUtil {
       dbQuery.execute()
       
       if (dbQuery.getUpdateCount() > 0) {
-        message ="payment successful"
+        message = "payment successful"
       }
     }
     message
@@ -136,12 +137,9 @@ object ConnectUtil {
     Using.Manager { use =>
       connection = use(DriverManager.getConnection(connectionUrl))
       val dbQuery = use(connection.prepareStatement("SELECT title FROM movie WHERE title LIKE CONCAT( '%',?,'%');"))
-
-      // necessary structure '%Foo%'
       dbQuery.setString(1, searchString)
       dbQuery.execute()
 
-      // this part works
       val result = use(dbQuery.getResultSet())
       while (result.next()) {
         resultArray.+=(result.getString("title"))
@@ -163,7 +161,7 @@ object ConnectUtil {
       dbQuery.execute()
       
       if (dbQuery.getUpdateCount() > 0) {
-        message ="successful"
+        message = "successful"
       }
     }
     message
@@ -181,7 +179,7 @@ object ConnectUtil {
       dbQuery.execute()
       
       if (dbQuery.getUpdateCount() > 0) {
-        message ="you have successfully unsubscribed"
+        message = "you have successfully unsubscribed"
       }
     }
     message

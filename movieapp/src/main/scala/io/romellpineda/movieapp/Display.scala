@@ -21,11 +21,11 @@ object Display {
     println("highest : to view list of highest rated movies")
     println("search [movie title] : to search for movie by title")
     println("subscribe [username] [password] : to sign up new customers")
-    // println("login [username] [password] : to login")
+    println("login [username] [password] : to login")
     println("rent [movie_id] : to rent a movie by movie id")
     println("pay : to pay your balance")
     println("exit : to exit store")
-    println("unsubscribe : to cancel your account")
+    println("unsubscribe [username] [password] : to cancel your account")
     println("")
   }
 }
