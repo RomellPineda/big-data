@@ -43,4 +43,4 @@ Romell Pineda
 
 ## License
 
-This project uses the following license: [MIT License]("https://opensource.org/licenses/MIT").
+This project uses the following license: [MIT License](https://opensource.org/licenses/MIT)
